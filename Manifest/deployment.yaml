@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mycontainer
+  labels:
+    app: mycontainer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mycontainer
+  template:
+    metadata:
+      labels:
+        app: mycontainer
+    spec:
+      containers:
+        - name: mycontainer
+          image: www.nexuspipeline.tk/mysecond:latest
+          imagePullPolicy: Always
+          ports:
+            - name: mycontainer
+              protocol: TCP
+              containerPort: 8086
+      imagePullSecrets:
+      - name: evoke8
+       
