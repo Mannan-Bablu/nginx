@@ -23,5 +23,5 @@ spec:
               protocol: TCP
               containerPort: 8086
       imagePullSecrets:
-      - name: evoke9
+      - name: evoke8
        
