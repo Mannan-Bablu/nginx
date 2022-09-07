@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: mycontainer
-          image: www.nexuspipeline.tk:8085/mysecond:latest
+          image: nexuspipeline.tk:8085/mysecond:latest
           imagePullPolicy: Always
           ports:
             - name: mycontainer
               protocol: TCP
               containerPort: 8086
       imagePullSecrets:
-      - name: evoke8
+      - name: evoke9
        
