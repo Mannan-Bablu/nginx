@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 MAINTAINER admin@evoke.net
 RUN apt-get update
 RUN mkdir /opt/tomcat/
